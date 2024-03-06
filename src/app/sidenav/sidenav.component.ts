@@ -1,3 +1,4 @@
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -7,31 +8,24 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { LoginComponent } from './login/login.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-sidenav',
   standalone: true,
   imports: [
-    RouterOutlet,
-    MatSidenavModule,
-    FormsModule,
-    MatCommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    CommonModule,
-    LoginComponent,
-    SidenavComponent
+      RouterOutlet,
+      MatSidenavModule,
+      FormsModule,
+      MatCommonModule,
+      MatToolbarModule,
+      MatIconModule,
+      MatListModule,
+      CommonModule
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './sidenav.component.html',
+  styleUrl: './sidenav.component.css'
 })
-
-export class AppComponent implements OnInit {
+export class SidenavComponent implements OnInit {
   title = 'CEPA';
   opened: boolean = false;
   currentDateTime: Date = new Date();
@@ -39,7 +33,7 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) { }
 
   navigateToHome() {
-    this.router.navigate(['/Home']);
+    this.router.navigate(['/home']);
   }
 
   navigateToEventManagement() {

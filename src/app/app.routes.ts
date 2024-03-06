@@ -5,28 +5,44 @@ import { ParticipantmanagementComponent } from './participantmanagement/particip
 import { EventmanagementComponent } from './eventmanagement/eventmanagement.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoginComponent } from './login/login.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 export const routes: Routes = [
-    {
-      path: "",
-      component: LoginComponent
-    },
-    {
-      path: "Home",
-      component: HomeComponent
-    },
-    {
-        path: "eventmanagement",
-        component: EventmanagementComponent
-    },
-    {
-      path: "participantmanagement",
-      component: ParticipantmanagementComponent
-    },
-    {
-      path: "AboutUs",
-      component: AboutusComponent
-    }
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: '',
+    component: SidenavComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'eventmanagement',
+        component: EventmanagementComponent,
+      },
+      {
+        path: 'participantmanagement',
+        component: ParticipantmanagementComponent,
+      },
+      {
+        path: 'AboutUs',
+        component: AboutusComponent,
+      },
+      {
+        path: '',
+        redirectTo: '/login',
+        pathMatch: 'full',
+      },
+    ],
+  },
+  {
+    path: '**',
+    redirectTo: '/login',
+  },
   ];
   
 
