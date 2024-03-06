@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
     MatIconModule,
     MatListModule,
     CommonModule,
+    LoginComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
