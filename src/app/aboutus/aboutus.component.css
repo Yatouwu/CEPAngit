@@ -1,0 +1,62 @@
+button{
+    box-shadow: 5px 6px 7px 1px #afadad;
+    color: white;
+    background-color:#4070f4;
+    border-radius: 7px;
+    width:140px;
+    height: 30px;
+    size: 20px;
+    right: 33px;
+    border: none;
+    text-align:center;
+    position: fixed;
+    margin-top: 45vh;
+    margin-right: 10px;
+}
+.aboutus{
+    padding: 45px;
+    padding-top: 30px;
+    position: relative;
+    max-width: fit-content;
+    
+}
+body{
+    
+    background-color: #e4e9f7;
+    margin: 0;
+    background-size: cover;
+}
+
+
+h1{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 30px;
+}
+p{
+    margin-left: 10px;
+    max-width: fit-content;
+    display:flex;
+}
+#header{
+    margin-bottom: 2%;
+}
+hr{
+    align-items: center;
+     margin-left: 40px;
+     margin-right: 40px;
+     display: flex;
+}
+.bg img
+{
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 81vh;
+        top: 60px;
+        margin: 0;
+        background-attachment: fixed; /* Keeps the background fixed when scrolling */
+        opacity: 0.5; /* Adjust the opacity value as needed */
+}

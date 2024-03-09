@@ -1,0 +1,69 @@
+body{
+  background-color: #e4e9f7;
+  margin: 0;
+  background-size: cover;
+}
+h1{
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  font-weight: bold;
+  font-size: 30px;
+}
+hr{
+  align-items: center;
+   margin-left: 40px;
+   margin-right: 40px;
+   display: flex;
+}
+.bg img
+{
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 81vh;
+        top: 60px;
+        margin: 0;
+        background-attachment: fixed; /* Keeps the background fixed when scrolling */
+        opacity: 0.1; /* Adjust the opacity value as needed */
+}
+  /* Style the table */
+  table {
+    display: inline-table;
+    width: 90%;
+    margin-top: 8vh;
+    margin-left: 65px;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e6e6e6; 
+  }
+
+  /* Style the button */
+  .send-invitation-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #007bff; /* Default background color */
+    color: #fff; /* Default text color */
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    margin-left: 37vh;
+    width:150px;
+    margin-top:20px;
+    margin-bottom: -20px;
+    float: right;
+    margin-right: 40px;
+  }

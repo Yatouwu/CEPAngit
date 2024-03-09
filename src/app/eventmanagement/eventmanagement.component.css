@@ -1,0 +1,64 @@
+body{
+    background-color: #e4e9f7;
+    margin: 0;
+    background-size: cover;
+}
+.heading{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.box {
+    box-shadow: 5px 6px 7px 1px #afadad;
+    margin-top:45px;
+    border-radius: 20px;
+    margin-left:43px;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Default background color */
+    color: #fff; /* Default text color */
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    margin-left:220px;
+    width:100px;
+    margin-top:20px;
+}
+.addevent{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #007bff; /* Default background color */
+    color: #fff; /* Default text color */
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    margin-left: 37vh;
+    width:150px;
+    margin-top:30px;
+    margin-bottom: -20px;
+}
+.container {
+   margin-left:-195px;
+}
+.bg img
+{
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 81vh;
+        top: 60px;
+        margin: 0;
+        background-attachment: fixed; /* Keeps the background fixed when scrolling */
+        opacity: 0.7; /* Adjust the opacity value as needed */
+}
