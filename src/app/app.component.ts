@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @Component({
@@ -25,7 +26,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatListModule,
     CommonModule,
     LoginComponent,
-    SidenavComponent
+    SidenavComponent,
+    RegisterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
