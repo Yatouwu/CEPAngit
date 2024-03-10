@@ -20,12 +20,6 @@ button{
     max-width: fit-content;
     
 }
-body{
-    
-    background-color: #e4e9f7;
-    margin: 0;
-    background-size: cover;
-}
 
 
 h1{
@@ -48,15 +42,4 @@ hr{
      margin-left: 40px;
      margin-right: 40px;
      display: flex;
-}
-.bg img
-{
-        width: auto;
-        height: auto;
-        position: absolute;
-        left: 81vh;
-        top: 60px;
-        margin: 0;
-        background-attachment: fixed; /* Keeps the background fixed when scrolling */
-        opacity: 0.5; /* Adjust the opacity value as needed */
 }
