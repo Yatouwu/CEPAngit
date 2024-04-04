@@ -43,6 +43,10 @@ export class SidenavComponent implements OnInit {
   navigateToParticipantManagement() {
     this.router.navigate(['/participantmanagement']);
   }
+
+  navigateToMailer() {
+    this.router.navigate(['/mailer']);
+  }
   
   navigateToAboutUs() {
     this.router.navigate(['/AboutUs']);

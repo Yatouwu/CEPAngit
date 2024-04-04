@@ -7,6 +7,7 @@ import { AboutusComponent } from './Admin/aboutus/aboutus.component';
 import { LoginComponent } from './Admin/login/login.component';
 import { SidenavComponent } from './Admin/sidenav/sidenav.component';
 import { RegisterComponent } from './register/register.component';
+import { MailerComponent } from './Admin/mailer/mailer.component';
 
 export const routes: Routes = [
   {
@@ -32,6 +33,10 @@ export const routes: Routes = [
       {
         path: 'participantmanagement',
         component: ParticipantmanagementComponent,
+      },
+      {
+        path: 'mailer',
+        component: MailerComponent,
       },
       {
         path: 'AboutUs',
