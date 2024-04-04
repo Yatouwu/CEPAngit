@@ -8,8 +8,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { LoginComponent } from './login/login.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { LoginComponent } from './Admin/login/login.component';
+import { SidenavComponent } from './Admin/sidenav/sidenav.component';
 import { RegisterComponent } from './register/register.component';
 
 

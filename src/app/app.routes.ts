@@ -1,11 +1,11 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './home/home.component';
-import { ParticipantmanagementComponent } from './participantmanagement/participantmanagement.component';
-import { EventmanagementComponent } from './eventmanagement/eventmanagement.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
-import { LoginComponent } from './login/login.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { HomeComponent } from './Admin/home/home.component';
+import { ParticipantmanagementComponent } from './Admin/participantmanagement/participantmanagement.component';
+import { EventmanagementComponent } from './Admin/eventmanagement/eventmanagement.component';
+import { AboutusComponent } from './Admin/aboutus/aboutus.component';
+import { LoginComponent } from './Admin/login/login.component';
+import { SidenavComponent } from './Admin/sidenav/sidenav.component';
 import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
