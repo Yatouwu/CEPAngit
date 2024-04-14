@@ -23,23 +23,23 @@ export const routes: Routes = [
     component: SidenavComponent,
     children: [
       {
-        path: 'home',
+        path: 'admin/home',
         component: HomeComponent,
       },
       {
-        path: 'eventmanagement',
+        path: 'admin/eventmanagement',
         component: EventmanagementComponent,
       },
       {
-        path: 'participantmanagement',
+        path: 'admin/participantmanagement',
         component: ParticipantmanagementComponent,
       },
       {
-        path: 'mailer',
+        path: 'admin/mailer',
         component: MailerComponent,
       },
       {
-        path: 'AboutUs',
+        path: 'admin/AboutUs',
         component: AboutusComponent,
       },
       {

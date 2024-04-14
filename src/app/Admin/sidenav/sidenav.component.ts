@@ -33,23 +33,27 @@ export class SidenavComponent implements OnInit {
   constructor(private router: Router) { }
 
   navigateToHome() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['admin/home']);
   }
 
   navigateToEventManagement() {
-    this.router.navigate(['/eventmanagement']);
+    this.router.navigate(['admin/eventmanagement']);
   }
   
   navigateToParticipantManagement() {
-    this.router.navigate(['/participantmanagement']);
+    this.router.navigate(['admin/participantmanagement']);
   }
 
   navigateToMailer() {
-    this.router.navigate(['/mailer']);
+    this.router.navigate(['admin/mailer']);
   }
   
   navigateToAboutUs() {
-    this.router.navigate(['/AboutUs']);
+    this.router.navigate(['admin/AboutUs']);
+  }
+
+  navigateToLogin() {
+    this.router.navigate(['/Login']);
   }
 
   ngOnInit(): void {    
