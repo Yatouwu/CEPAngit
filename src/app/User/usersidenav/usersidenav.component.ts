@@ -10,51 +10,31 @@ import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-sidenav',
+  selector: 'app-usersidenav',
   standalone: true,
   imports: [
-      RouterOutlet,
-      MatSidenavModule,
-      FormsModule,
-      MatCommonModule,
-      MatToolbarModule,
-      MatIconModule,
-      MatListModule,
-      CommonModule
+    RouterOutlet,
+    MatSidenavModule,
+    FormsModule,
+    MatCommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    CommonModule
   ],
-  templateUrl: './sidenav.component.html',
-  styleUrl: './sidenav.component.css'
+  templateUrl: './usersidenav.component.html',
+  styleUrl: './usersidenav.component.css'
 })
-export class SidenavComponent implements OnInit {
+export class UsersidenavComponent {
   title = 'CEPA';
   opened: boolean = true;
   currentDateTime: Date = new Date();
 
   constructor(private router: Router) { }
-
   navigateToHome() {
-    this.router.navigate(['admin/home']);
+    this.router.navigate(['user/userhome']);
   }
 
-  navigateToEventManagement() {
-    this.router.navigate(['admin/eventmanagement']);
-  }
-  
-  navigateToParticipantManagement() {
-    this.router.navigate(['admin/participantmanagement']);
-  }
-
-  navigateToMailer() {
-    this.router.navigate(['admin/mailer']);
-  }
-  
-  navigateToAboutUs() {
-    this.router.navigate(['admin/AboutUs']);
-  }
-
-  redirectToAdminLogin() {
-    this.router.navigate(['admin/login']);
-  }
 
   ngOnInit(): void {    
     setInterval(() => {
