@@ -13,28 +13,28 @@
         <img src="assets/images/ccsLogo.png" alt="CCSLogo">
         <img src="assets/images/CEPAlogo2-removebg-preview.png" alt="CEPAnav">
     </div>
-      <div class="container">
+    <div class="container">
         <div class="row">
-        <div class=" column llogo">
-            <img src="assets/images/logo/CEPALogo-removebg-preview.png" alt="Logo">
+            <div class="column llogo">
+                <img src="assets/images/logo/CEPALogo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="column box form-box">
+                <header>Admin Login</header>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="field input">
+                      <input type="text" formControlName="adminID" placeholder="ID Number">
+                    </div>
+                    <div class="field1 input">
+                      <input type="password" formControlName="adminPass" placeholder="Password">
+                    </div>
+                    <div class="field">
+                      <button type="submit" class="btn">Login</button>
+                    </div>
+                  </form>
+                  
+            </div>
         </div>
-        <div class=" colummn box form-box">
-            <header>Admin Login</header>
-            <form action="" method="post">
-                <div class="field input">
-                    <input type="text" name="email" id="email" placeholder="ID Number" autocomplete="off" required>
-                </div>
-
-                <div class="field1 input">
-                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>
-                </div>
-
-                <div class="field">
-                    <input type="submit" class="btn" name="submit" value="Login" required>
-                </div>
-            </form>
-        </div>
-      </div>
     </div>
+    
 </body>
 </html>

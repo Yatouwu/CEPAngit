@@ -8,7 +8,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { LoginComponent } from './Admin/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 import { SidenavComponent } from './Admin/sidenav/sidenav.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -25,9 +25,9 @@ import { RegisterComponent } from './register/register.component';
     MatIconModule,
     MatListModule,
     CommonModule,
-    LoginComponent,
     SidenavComponent,
-    RegisterComponent
+    RegisterComponent,
+    HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
